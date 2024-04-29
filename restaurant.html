@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Choose your meal</title>
+    </head>
+
+    <body>
+        <center>
+        <table width="500" border="0">
+            <tr>
+                <td>Burger
+                    <input type="checkbox" id="burger">
+                </td>
+                <td>
+                    <input type="radio" id="regular" name="burger" >Regular burger<br>
+                    <input type="radio" id="cheese" name="burger" >With cheese<br>
+                    <input type="radio" id="sand" name="burger">With Cheese and Sandwich
+                    </td>
+            </tr>
+
+            <tr height="30"></tr>
+
+            <tr >
+                <td>Pizza
+                    <input type="checkbox" id="pizza">
+                </td>
+                <td>
+                    <input type="radio" id="small" name="pizza" >Small<br>
+                    <input type="radio" id="medium" name="pizza" >Medium<br>
+                    <input type="radio" id="large" name="pizza">Large
+                    </td>
+            </tr>
+
+            <tr height="30"></tr>
+
+            <tr >
+                <td>Drinks
+                    <input type="checkbox" id="drinks">
+                </td>
+                <td>
+                    <input type="radio" id="water" name="drinks" >Water<br>
+                    <input type="radio" id="bottled" name="drinks" >Bottled soda<br>
+                    </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="calu()">Print</button></td>
+            </tr>
+        </table>
+    </center>
+
+    <script>
+        function calu(){
+           let totalCost = 0, costBurger  = 0,costPizza = 0, costDrinks = 0;
+
+           if(document.getElementById("burger").checked){
+            if(document.getElementById("regular").checked){
+                costBurger += 500;
+            }else if(document.getElementById("cheese").checked){
+                costBurger += 500;
+            }else if(document.getElementById("sand").checked){
+                costBurger += 500;
+            }
+           }
+
+           if(document.getElementById("pizza").checked){
+            if(document.getElementById("small").checked){
+                costPizza += 600;
+            }else if(document.getElementById("medium").checked){
+                costPizza += 600;
+            }else if(document.getElementById("large").checked){
+                costPizza += 600;
+            }
+           }
+
+           if(document.getElementById("drinks").checked){
+            if(document.getElementById("water").checked){
+                costDrinks += 50;
+            }else{
+                costDrinks += 70;
+            }
+           }
+
+           totalCost = costBurger + costDrinks + costPizza;
+
+           alert("Burger: Cost = "+costBurger+"\nPizza: Cost = "+costPizza+"\nDrinks: Cost = "+costDrinks+"\n Total cost: "+totalCost);
+        }
+    </script>
+    </body>
+</html>
