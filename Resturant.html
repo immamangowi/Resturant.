@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Restrant
+  </title>
+  </head>
+
+  <link rel="stylesheet" href="resturant.css">
+
+  <body><div class="main">
+
+    
+
+    <center>
+      <fieldset style="border: 2px solid white; border-radius: 10px; height: fit-content; width: fit-content; box-shadow: 1px 4px  30px black;">
+
+      <fieldset style="border: 2px solid white; border-radius: 10px; height: fit-content; width: fit-content;">
+        <legend style="font-weight: bold;">Order Details</legend>
+        
+        <h1>Arusha science Resturant</h1>
+        <hr width="500px" color="white">
+
+      <form>
+     
+
+               <h2>Bagger</h2>
+
+             <input type="radio" name="bagger" value="regular"> Regular Bagger ($2) <br>
+                 <input type="radio" name="bagger" value="cheese"> With Cheese ($5) <br> 
+                 <input type="radio" name="bagger" value="deluxe"> Deluxe ($7)
+
+              <h2>Pizza</h2>  
+
+                <input type="radio" name="pizza" value="small"> Small ($5) <br>
+                   <input type="radio" name="pizza" value="medium"> Medium ($7) <br>
+                <input type="radio" name="pizza" value="large"> Large ($8)
+
+                  <h2>Drinks</h2>
+
+                 <input type="radio" name="drink" value="water"> Water ($1) <br>
+              <input type="radio" name="drink" value="soda"> Soda ($2)<br><br>
+
+                  <button type="button" onclick="calculateTotal()" style="height: 50px; width: 200px; background-image: linear-gradient(45deg , black, transparent); color: white; border-radius: 10px; font-weight: lighter; font-family: 'Times New Roman', Times, serif; font-size: large; ">Calculate Total</button>
+
+                               </form> 
+                               </fieldset>
+                               <br><br><br>
+
+                               <fieldset style="border: 2px solid white; border-radius: 10px; height: fit-content; width: fit-content; box-shadow: 1px 4px 30px black;">
+                        <div id="receipt">
+                  <h2>Receipt</h2>
+
+                  <p id="baggerText" style="font-weight: bold;">Bagger:</p>
+  
+                   <p id="pizzaText" style="font-weight: bold;">Pizza:</p>  
+
+                  <p id="drinkText" style="font-weight: bold;">Drink:</p>
+
+                   <p id="totalText" style="font-weight: bold;">Total:</p>
+
+                   </div>
+                               </fieldset>
+
+      </fieldset>
+<script src="Resturant.js">
+
+
+</script>
+
+</center>
+</div>
+<video autoplay loop muted class="back-video">
+    
+  <source src="Felistaa.mp4" type="video/mp4"></video>
+  </body>
+</html>
